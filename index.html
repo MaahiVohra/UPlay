@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UPlay</title>
+
+    
+    <!-- Bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="home.css" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: black">
+    <header>
+      <nav class="d-flex align-items-center justify-content-center">
+        <h2 class="logo col-4 col-lg-auto me-lg-auto">UPLAY</h2>
+        <ul class="nav col-4 col-lg-auto me-lg-auto mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white hidden">Anime</a></li>
+          <li><a href="#" class="nav-link px-2 text-white hidden">Movies</a></li>
+          <li><a href="#" class="nav-link px-2 text-white hidden">TV-Series</a></li>
+          <li><a href="#" class="nav-link px-2 text-white hidden">Genre</a></li>
+        </ul>
+
+        <form class="col-6 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input
+            type="search"
+            class="form-control form-control-dark hidden"
+            placeholder="Search..."
+            aria-label="Search"
+            style="
+              background-color: rgba(0, 0, 0, 0.5);
+              outline: none;
+              border: none;
+            "
+          />
+        </form>
+        <div class="searchmobile revhidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
+        </div>
+        <div class="text-end hidden">
+          <button type="button" class="btn btn-outline-light me-2">
+            Login
+          </button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </nav>
+    </header>
+    <section class="recommended">
+      <div class="divider""><img src="/images/ui/divider.svg" alt=""></div>
+      
+      <div
+        id="carouselExampleControls1"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="rec-details row gx-5 justify-content-center align-items-center container-fluid">
+                <img src="/images/posters/aot-poster.jpg" alt="aot" class="col-6 col-lg-2 col-md-3 col-sm-6">
+                <div class="content row col-6 gy-3 col-lg-5 col-md-6 col-sm-6">
+                    <div class="title col-12 text">Attack On Titan</div>
+                    <div class="description col-12 text">After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.</div>
+                    <div class="col-12">
+                        <button class="btn btn-lg btn-light"><img src="/images/ui/play-regular-24.png" alt="">START WATCHING</button>
+                        <button class="btn btn-lg btn-outline-light"> ADD TO WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <img
+              src="/images/background/aot-bg.webp"
+              class="d-block w-100 rec-images"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="rec-details row gx-5 justify-content-center align-items-center container-fluid">
+                <img src="/images/posters/snwh-poster.jpg" alt="aot" class="col-6 col-lg-2 col-md-3 col-sm-6">
+                <div class="content row col-6 col-lg-5 col-md-6 col-sm-6 gy-3">
+                    <div class="title col-12 text">Spiderman : No Way Home</div>
+                    <div class="description col-12 text">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</div>
+                    <div class="col-12">
+                        <button class="btn btn-lg btn-light"><img src="/images/ui/play-regular-24.png" alt="">START WATCHING</button>
+                        <button class="btn btn-lg btn-outline-light">ADD TO WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            
+            <img
+              src="/images/background/snwh-bg.jpeg"
+              class="d-block w-100 rec-images"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <div class="rec-details row gx-5 justify-content-center align-items-center container-fluid">
+                <img src="/images/posters/squid-poster.jpg" alt="aot" class="col-6 col-lg-2 col-md-3 col-sm-6">
+                <div class="content row col-6 col-lg-5 col-md-6 col-sm-6 gy-3">
+                    <div class="title col-12 text">Squid Game</div>
+                    <div class="description col-12 text">Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits with deadly high stakes. A survival game that has a whopping 45.6 billion-won prize at stake.</div>
+                    <div class="col-12">
+                        <button class="btn btn-lg btn-light"><img src="/images/ui/play-regular-24.png" alt="">START WATCHING</button>
+                        <button class="btn btn-lg btn-outline-light">ADD TO WATCHLIST</button>
+                    </div>
+                </div>
+            </div>
+            <img
+              src="/images/background/squid-bg.jpeg"
+              class="d-block w-100 rec-images"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev slider"
+          type="button"
+          data-bs-target="#carouselExampleControls1"
+          data-bs-slide="prev"
+          style="z-index: 2;"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next slider"
+          type="button"
+          data-bs-target="#carouselExampleControls1"
+          data-bs-slide="next"
+          style="z-index: 2;"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="continue-watching">
+      <div class="seperator d-flex text">
+        <div class="line-before"></div>
+        <div class="heading">Continue Watching...</div>
+        <div class="line-after"></div>
+      </div>
+      <div
+        id="carouselExampleControls2"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+                <img
+                  src="/images/posters/snwh-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/aot-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/squid-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <img
+                  src="/images/posters/13reasonswhy-poster.webp"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/batman-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/traimtobusan-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+            </div>
+          </div>
+          
+        </div>
+        <button
+          class="carousel-control-prev slider"
+          type="button"
+          data-bs-target="#carouselExampleControls2"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next slider"
+          type="button"
+          data-bs-target="#carouselExampleControls2"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="trending">
+      <div class="seperator d-flex text">
+        <div class="line-before"></div>
+        <div class="heading">
+          Trending
+          <img
+            src="/images/ui/trending-up-regular-24.png"
+            alt="trending-symbol"
+          />
+        </div>
+        <div class="line-after"></div>
+      </div>
+      <div
+        id="carouselExampleControls3"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <div class="row">
+                <img
+                  src="/images/posters/spyfamily-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/moneyheist-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/batman-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+                <img
+                  src="/images/posters/demonslayer-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/aot-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+                <img
+                  src="/images/posters/snwh-poster.jpg"
+                  class="d-block item col-4"
+                  alt="..."
+                />
+            </div>
+          </div>
+          
+        </div>
+        <button
+          class="carousel-control-prev slider"
+          type="button"
+          data-bs-target="#carouselExampleControls3"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next slider"
+          type="button"
+          data-bs-target="#carouselExampleControls3"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <footer class="d-flex justify-content-center align-items-center">
+        <div class="copyright">UPLAY©️ 2022</div>
+    </footer>
+  </body>
+</html>

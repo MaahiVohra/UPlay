@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.text {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+}
+
+
+nav {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    color: white;
+    width: 100%;
+    padding: 1em;
+}
+
+.nav-link:hover{
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+}
+
+.recommended{
+    height: 50em;
+    overflow: hidden;
+}
+
+.rec-details{
+    position: absolute;
+    top: 30vh;
+    z-index: 2;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.rec-images{
+    opacity: 0.5;
+    height: 50em;
+}
+
+.slider { 
+    height: 50%;
+    margin: auto;
+    width: 5%;
+}
+
+.divider{
+    width: 75%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.line-before, .line-after{
+    height: 0.1em;
+    width: 30%;
+    background-color: white;
+}
+
+.seperator{
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.heading{
+    margin: 2em;
+}
+
+footer{
+    margin-top: 10em;
+    background-color: rgb(255, 255, 255);
+    padding: 2em;
+    font-weight: bold;
+}
+
+.revhidden{
+    display: none;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width:1000px) {
+
+    .nav{
+        width: auto;
+    }
+
+    .recommended{
+        height: 60em;
+        padding: none;
+    }
+    .title{
+        font-size: medium;
+    }
+    .description{
+        font-size: small;
+    }
+    .rec-images{
+        height: 60em;
+        width: 60em!important;
+    }
+   
+    .hidden{
+        display: none;
+    }
+
+    .input{
+        margin: auto;
+    }
+    .revhidden{
+        display: block;
+    }
+    nav{
+        padding-right: 2em;
+        padding-left: 2em;
+        z-index: 3;
+    }
+}
